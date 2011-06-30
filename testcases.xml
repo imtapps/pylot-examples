@@ -1,0 +1,18 @@
+
+<testcases>
+    <param name="server" value="http://www.apps-system.com" />
+    <case>
+        <url>${server}</url>
+    </case>
+    <case>
+	<url>${server}/accounts/login</url>
+    </case>
+    <case>
+	<url>${server}/accounts/login</url>
+	<method>POST</method>
+	<body><![CDATA[username=?&password=?]]></body>
+    </case>
+    <case>
+        <url>${server}/navigator</url>
+    </case>
+</testcases>
